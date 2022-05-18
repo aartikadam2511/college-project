@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta charset="UTF-8">
+        <meta name="viewport" content="width=-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" media="screen and(max-width:800px)" href="table.css">
+        <link rel="stylesheet" media="screen and(max-width:530px)" href="phone.css">
+
+    </head>
+    <body>
+       
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <section id="home">s
+            <div class="main">
+                <h1 class="headings">I   AM<BR>AARTI KADAM</h1>
+                    <button class="btn">
+                        Hire me
+                    </button>
+            </div>
+        </section>
+        <section id="about">
+            <h1 class="headings">ABOUT ME</h1>
+            <div id="pic">
+            <img src="pune.jpeg" alt="" >
+            <div class="intro"><br><br><br>
+                <h2>AARTI   KADAM</h2>
+                <P> I would like to work in challenging Technical Environment in Application development<br>
+                Where i can allpy my technical, Analytical,design and development skill to deliver best solution. </P>
+                <br>
+               <div id="icons">
+                   <h2>SOCIAL COMUNITIES</h2>
+                    <a href="https://m.facebook.com/?_rdr"><i class="fa-brands fa-facebook-f fa-3x"></i></a>
+                    <a href="https://www.insagram.com/broken_ngel12311/"><i class="fa-brands fa-instagram fa-3x"></i></a>
+                    <a href="https://www.snapchat.com/add/artikadam7341?share_id=JHolise4qUs&locale=en-US"><i class="fa-brands fa-snapchat fa-3x"></i></a>
+                    </div>
+                       </div>
+            <img id="pic2" src="Capture.jpg" alt="" >
+                </div>
+                <div class="butt">
+                <button onclick="document.location='Aarti kadam.pdf'">download cv</button>
+                </div>
+                <!-- <a href="Aarti kadam.pdf" target="blank">download cv</a> -->
+        <section id="portfolio">
+        <h1 class="headings">MAJOR WORK</h1>
+        <div class="gallry">
+            <img src="w1.jpeg" alt="">
+            <img src="w2.jpeg" alt="">
+            <img src="w3.jpeg" alt="">
+            <img src="w4.jpeg" alt="">
+            <img src="w5.jpeg" alt="">
+            <img src="w6.jpeg" alt="">
+        </div>
+    </section >
+    <section id="services">
+    <h1 class="headings">SERVICES</h1>
+    <div class="row">
+      <div class="box">
+          <img src="web.png" alt="">
+          <h1 class="headings">Website<br> design</h1>
+          <p>Web design is the planning and creation of websites. 
+              This includes a number of separate skills that all fall under the umbrella of web design.
+               Some examples of these skills are information architecture,
+                user interface, site structure, navigation, layout, colors, fonts, and overall imagery</p>
+      </div>
+      <div class="box">
+        <img src="front.png" alt="">
+        <h1 class="headings">Front <br>End</h1>
+        <p>A Front End Developer is a person who will use any of
+             the frameworks or the packages such as Jquery, Angular JS, Angular JS 2, NodeJS, ReactJs,
+              backboneJS, Bootstrap, etc. all based primarily on the 
+              fundamental HTML and CSS, which forms the basis of front end development.</p>
+    </div>
+    <div class="box">
+        <img src="back.png" alt="">
+        <h1 class="headings">back<br> end</h1>
+        <p>A Backend Developer is a skilled software developer responsible
+             for or skilled enough to understand, plan, develop and test the server-side/business logic of 
+             an application.Backend developers take care and maintain the back-end of a website,
+              Including databases, servers, and apps, and they control what you don't see.</p>
+    </div>
+    </div>
+    </section>
+    <section id="contact">
+        <h1 class="headings">CONTACT US</h1>
+        <form action="" method="post"  class="form" autocomplete="off" onsubmit="validation()">
+            <input type="text" name="name" id="uname" class="input" placeholder="Enter Your Name">
+            <span id="unamee"></span><br>
+            <input type="email" name="email" id="mail" class="input" placeholder="Enter Your Email">
+            <span id="maill"></span><br>
+            <textarea name="msg" id="msg" cols="30" rows="5" placeholder="Enter your massage"></textarea>
+            <span id="msgg"></span><br>
+            <input type="submit" name="save"  value="SEND" id="send">
+        </form>
+
+    </section>
+    
+    <script>
+        function validation(){
+            var username = document.getElementById("uname").value;
+            var email=document.getElementById("mail").value;
+            var massage= document.getElementById("msg").value;
+            if(uname.value=="")
+            {
+                document.getElementById("unamee").innerHTML="**please write username**";
+                
+            }
+            if(mail.value=="")
+            {
+                document.getElementById("maill").innerHTML="**please write email**";
+                
+            }
+            if(msg.value=="")
+            {
+                document.getElementById("msgg").innerHTML="**plz fill the massage field**";
+                
+            }
+            
+        }
+    </script>
+    </body>
+</html>
